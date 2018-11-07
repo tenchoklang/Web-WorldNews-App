@@ -1,0 +1,7 @@
+.news-page-container{
+    display: flex;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+}
