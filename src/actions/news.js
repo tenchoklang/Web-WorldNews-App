@@ -1,4 +1,5 @@
 import axios from 'axios';
+import apiKey from '../api_key/news_apikey'
 
 export const getNews = (payload)=>({
     type: 'GET_NEWS',
@@ -6,7 +7,6 @@ export const getNews = (payload)=>({
 })
 
 export const startGetNews = () =>{
-    const apiKey='6306fbe477654ab8929fa29582a45127';
     const baseUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
     //axios
     return (dispatch)=>{

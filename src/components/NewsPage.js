@@ -20,7 +20,7 @@ class NewsPage extends React.Component{
 
     render(){
         return (
-            <div className="news-page-container">             
+            <div className="news-page-container">      
                 <Navigation />
                 <NewsList />
             </div>

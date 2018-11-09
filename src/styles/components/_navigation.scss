@@ -10,6 +10,15 @@
     } 
 }
 
+//used to toggle the side nav
+.visible{ visibility: visible; }
+.hidden{ visibility: hidden; }
+
+.fa-times{
+    float: right;
+    padding: $m-size 0;
+}
+
 .navbar-sandwich{
     visibility: hidden;
     @media (max-width: 600px) {
@@ -31,6 +40,10 @@
         padding: $s-size;
         visibility: visible;
     } 
+}
+
+.toggle-navbar-side{
+    visibility: visible;
 }
 
 
