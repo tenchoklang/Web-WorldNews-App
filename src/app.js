@@ -1,12 +1,10 @@
 import React from 'react';//relative path
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'; 
-import AppRouter, {history} from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css'
 import './styles/styles.scss';
-import LoadingPage from './components/LoadingPage';
-import {startGetNews} from './actions/news'
+import NewsPage from './components/NewsPage'
 
 const store = configureStore();
 
@@ -14,27 +12,14 @@ const store = configureStore();
 
 const jsx = (
     <Provider store={store}>
-        <AppRouter />
+        <NewsPage />
     </Provider>
 );
 
 
-ReactDOM.render(<LoadingPage />, document.getElementById("app"));
-
 
 ReactDOM.render(jsx, document.getElementById("app"));
 
-
-//if we are already in the app and we log in or log out, we dont want to re-render everything
-//that is why we us this variable isrenderd to check if we are currently rendering or not
-let isrendered = false;
-const render = ()=>{
-    if(!isrendered){
-        ReactDOM.render(jsx, document.getElementById("app"));
-    }
-}
-
-render
 
 
 

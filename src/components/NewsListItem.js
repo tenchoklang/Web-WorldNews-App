@@ -14,7 +14,7 @@ const NewsListItem = ({author , content, description, publishedAt, source, title
                 </div>
                 <div className="news-article__information">
                     <p className="news-article__description">{description || title}</p>
-                    <button>Go To Story</button>
+                    <button>Full Article</button>
                 </div>
             </div>
             <h5>{source.name}</h5>
