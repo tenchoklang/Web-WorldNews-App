@@ -6,12 +6,7 @@ import 'normalize.css/normalize.css'
 import './styles/styles.scss';
 import NewsPage from './components/NewsPage'
 
-console.log(process.env.NEWS_API_KEY)
-
-
 const store = configureStore();
-
-
 
 const jsx = (
     <Provider store={store}>

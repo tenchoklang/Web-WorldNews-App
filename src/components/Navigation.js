@@ -28,7 +28,6 @@ class Navigation extends React.Component{
         this.setState({
             toggleSideNav: css
         });
-        console.log(this.state);
     }
 
     onNavbarSelectionClicked=(index, value)=>{
@@ -37,7 +36,6 @@ class Navigation extends React.Component{
         })
         const sources = this.sources[value];
         this.props.dispatch(startGetNews(sources));
-        console.log(sources);
     }
 
     render(){

@@ -14,8 +14,6 @@ export const startGetNews = (sources) =>{
     }else{//else get topheadlines for US
         baseUrl = baseUrl.concat(`?country=us&apiKey=${apiKey}`);
     }
-    console.log(baseUrl);
-    console.log(process.env.NEWS_API_KEY)
 
     //axios
     return (dispatch)=>{
