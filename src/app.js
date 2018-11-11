@@ -6,6 +6,9 @@ import 'normalize.css/normalize.css'
 import './styles/styles.scss';
 import NewsPage from './components/NewsPage'
 
+console.log(process.env.REACT_APP_API_KEY)
+
+
 const store = configureStore();
 
 

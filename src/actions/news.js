@@ -15,6 +15,7 @@ export const startGetNews = (sources) =>{
         baseUrl = baseUrl.concat(`?country=us&apiKey=${apiKey}`);
     }
     console.log(baseUrl);
+
     //axios
     return (dispatch)=>{
         axios.get(baseUrl)

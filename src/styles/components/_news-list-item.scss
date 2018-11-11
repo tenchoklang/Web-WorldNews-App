@@ -35,7 +35,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    button{
+    a button{
         display: block;
         margin: 0 auto $s-size auto;
         border: none;
@@ -44,6 +44,8 @@
         padding: $s-size;
         position: relative;
         border-radius: 4px;
+        color: white;
+        text-decoration: none;
         &:hover{
             top: 2px;
             box-shadow: none;
@@ -54,14 +56,12 @@
 
 
 @media (max-width: 850px) {
-
     .news{
         margin: $s-size 0;
     }
     
     .news-article{
         position: relative;
-        z-index: -1;
     }
 
     .news-article__image{
