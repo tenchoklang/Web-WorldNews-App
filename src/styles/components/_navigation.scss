@@ -1,3 +1,9 @@
+.navbar-side--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navbar-side{
     position: fixed;
     background-color: #3f51b5;
@@ -21,6 +27,7 @@
 
 .navbar-sandwich{
     visibility: hidden;
+    margin-right: $s-size;
     @media (max-width: 600px) {
         visibility: visible;
         align-items: center;

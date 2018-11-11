@@ -44,7 +44,11 @@ class Navigation extends React.Component{
         return (
             <div >
                 <nav className={this.state.toggleSideNav}>
-                    <i className="fa fa-times" aria-hidden="true" onClick={this.toggleSideNav}></i>
+                   
+                    <div className="navbar-side--header">
+                        <img src='/images/logo.png'/>
+                        <i className="fa fa-times" aria-hidden="true" onClick={this.toggleSideNav}></i>
+                    </div>
 
                     <Search />
                     <ul className="navbar-nav">
@@ -72,6 +76,7 @@ class Navigation extends React.Component{
                         <path d='M0, 14 30, 14' stroke='#fff' strokeWidth='5'></path>
                         <path d='M0, 23 30, 23' stroke='#fff' strokeWidth='5'></path>
                     </svg>
+
                     <Search />
                 </nav>
             </div>
